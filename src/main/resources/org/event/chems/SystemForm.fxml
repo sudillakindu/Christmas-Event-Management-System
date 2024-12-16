@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #595959;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.event.chems.SystemForm">
+    <children>
+        <ImageView fx:id="systemFormImage" fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" />
+        <BorderPane prefHeight="768.0" prefWidth="1024.0">
+            <top>
+                <AnchorPane prefHeight="108.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button layoutX="952.0" layoutY="66.0" mnemonicParsing="false" onAction="#exitApplication" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Exit">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="883.0" layoutY="66.0" mnemonicParsing="false" onAction="#adminActionEvent" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Admin">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="setDateTimeLabel" alignment="CENTER_RIGHT" layoutX="845.0" layoutY="7.0" prefHeight="53.0" prefWidth="168.0" textAlignment="RIGHT" textFill="#aba9a9">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="systemFormSideLogo" fitHeight="108.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane prefHeight="660.0" prefWidth="381.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane focusTraversable="true" layoutX="22.0" layoutY="7.0" prefHeight="632.0" prefWidth="355.0" style="-fx-background-color: white; -fx-background-radius: 50px; -fx-padding: 30px; -fx-border-color: #cd0c0c; -fx-border-radius: 45; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 5), 20, 0, 0, 0);">
+                            <children>
+                                <Label layoutX="68.0" layoutY="22.0" text="Member Registration" textFill="#cd0c0c">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Group layoutX="33.0" layoutY="71.0">
+                                    <children>
+                                        <Label layoutX="2.0" layoutY="-5.0" prefHeight="30.0" text="CHEMS ID">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="chemsIDLabelAuto" alignment="CENTER" layoutX="120.0" layoutY="-7.0" prefHeight="30.0" prefWidth="167.0" textFill="#0c8620">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Group>
+                                <Group layoutX="33.0" layoutY="110.0">
+                                    <children>
+                                        <Label layoutX="2.0" layoutY="-2.0" prefHeight="30.0" text="User Type">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <ComboBox fx:id="selectedComboBoxUserType" layoutX="120.0" layoutY="-4.0" onAction="#selectedComboBoxUserTypeActionEvent" prefHeight="30.0" prefWidth="167.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                    </children>
+                                </Group>
+                                <Group layoutX="33.0" layoutY="161.0">
+                                    <children>
+                                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="30.0" text="NIBM ID">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="NIBMIDTextField" layoutX="120.0" layoutY="-6.0" prefHeight="30.0" prefWidth="167.0" promptText="MADSE241F-001" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                    </children>
+                                </Group>
+                                <Group layoutX="33.0" layoutY="198.0">
+                                    <children>
+                                        <Label layoutX="2.0" layoutY="-3.0" prefHeight="30.0" text="Member Name">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="memberNameTextField" layoutX="120.0" prefHeight="30.0" prefWidth="167.0" promptText="SANUKA SANKALPA" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                    </children>
+                                </Group>
+                                <Group layoutX="33.0" layoutY="290.0">
+                                    <children>
+                                        <Label layoutX="2.0" layoutY="-9.0" prefHeight="30.0" text="Email ( very clearly ) ">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="emailTextField" layoutX="2.0" layoutY="26.0" prefHeight="30.0" prefWidth="284.0" promptText="example@student.nibm.lk || example@gmail.com" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                    </children>
+                                </Group>
+                                <Group layoutX="37.0" layoutY="379.0">
+                                    <children>
+                                        <Label fx:id="paymentLabel" layoutX="-1.0" layoutY="-22.0" prefHeight="30.0" text="Payment">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <ComboBox fx:id="selectedComboBoxPayment" layoutX="115.0" layoutY="-23.0" onAction="#selectedComboBoxPaymentActionEvent" prefHeight="30.0" prefWidth="167.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                    </children>
+                                </Group>
+                                <Group layoutX="37.0" layoutY="429.0">
+                                    <children>
+                                        <Label fx:id="discountLabel" layoutX="-1.0" layoutY="-25.0" prefHeight="30.0" text="Discount">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <ComboBox fx:id="selectedComboBoxDiscount" layoutX="115.0" layoutY="-26.0" onAction="#selectedComboBoxDiscountActionEvent" prefHeight="30.0" prefWidth="167.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                    </children>
+                                </Group>
+                                <Pane layoutX="74.0" layoutY="457.0" prefHeight="57.0" prefWidth="200.0" style="-fx-background-color: #595959; -fx-background-radius: 30; -fx-border-color: #cd0c0c; -fx-border-width: 3; -fx-border-radius: 30; -fx-padding: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 5), 10, 0, 0, 0);">
+                                    <children>
+                                        <Label fx:id="priceLabel" alignment="CENTER" layoutX="3.0" prefHeight="57.0" prefWidth="200.0" textFill="WHITE">
+                                            <font>
+                                                <Font size="32.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <Group layoutX="34.0" layoutY="545.0">
+                                    <children>
+                                        <Button layoutX="1.0" layoutY="-11.0" mnemonicParsing="false" onAction="#addMemberActionEvent" prefHeight="33.0" prefWidth="283.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="ADD MEMBER">
+                                            <font>
+                                                <Font name="System Bold" size="12.0" />
+                                            </font>
+                                        </Button>
+                                        <Button layoutX="147.0" layoutY="30.0" mnemonicParsing="false" onAction="#clearActionEvent" prefHeight="32.0" prefWidth="136.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="CLEAR">
+                                            <font>
+                                                <Font name="System Bold" size="12.0" />
+                                            </font>
+                                        </Button>
+                                        <Button layoutX="1.0" layoutY="30.0" mnemonicParsing="false" onAction="#updateActionEvent" prefHeight="32.0" prefWidth="136.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="UPDATE">
+                                            <font>
+                                                <Font name="System Bold" size="12.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </Group>
+                                <Group layoutX="33.0" layoutY="241.0">
+                                    <children>
+                                        <Label fx:id="batchNumberLabel" layoutX="2.0" layoutY="-3.0" prefHeight="30.0" text="Batch Number">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="batchNumberTextField" layoutX="120.0" prefHeight="30.0" prefWidth="167.0" promptText="MADSE241F" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                    </children>
+                                </Group>
+                            </children>
+                            <padding>
+                                <Insets left="100.0" />
+                            </padding>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+            </left>
+            <right>
+                <AnchorPane prefHeight="660.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+            </right>
+            <bottom>
+                <AnchorPane prefHeight="0.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
+            </bottom>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane focusTraversable="true" layoutX="17.0" layoutY="7.0" prefHeight="354.0" prefWidth="606.0" style="-fx-background-color: white; -fx-background-radius: 13; -fx-padding: 30px; -fx-border-color: #cd0c0c; -fx-border-radius: 10; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 5), 20, 0, 0, 0);">
+                            <children>
+                                <Label layoutX="211.0" layoutY="17.0" text="Search Member" textFill="#cd0c0c">
+                                    <font>
+                                        <Font name="System Bold" size="25.0" />
+                                    </font>
+                                </Label>
+                                <Group layoutX="28.0" layoutY="76.0">
+                                    <children>
+                                        <Group layoutY="1.0">
+                                            <children>
+                                                <TextField fx:id="searchMember_ChemsId_NibmId_MemberName_TextField" layoutX="119.0" layoutY="-8.0" prefHeight="32.0" prefWidth="124.0" promptText="Search Member" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                    <ComboBox fx:id="selectedComboBoxSearchMember" layoutX="-13.0" layoutY="-8.0" onAction="#selectedComboBoxSearchMemberActionEvent" prefHeight="32.0" prefWidth="128.0" style="-fx-background-radius: 10;" />
+                                            </children>
+                                        </Group>
+                                    </children>
+                                </Group>
+                                <TableView fx:id="tableView" layoutX="14.0" layoutY="107.0" prefHeight="233.0" prefWidth="577.0" style="-fx-background-color: #595959;" tableMenuButtonVisible="true">
+                                    <columns>
+                                        <TableColumn fx:id="chemsIdColumn" prefWidth="47.0" text="CHEMS ID" />
+                                        <TableColumn fx:id="userTypeColumn" minWidth="0.0" prefWidth="47.0" text="User Type" />
+                                        <TableColumn fx:id="nibmIdColumn" prefWidth="98.0" text="NIBM ID" />
+                                        <TableColumn fx:id="memberNameColumn" minWidth="0.0" prefWidth="70.0" text="Member Name" />
+                                        <TableColumn fx:id="batchNumberColumn" minWidth="6.0" prefWidth="76.0" text="Batch Number" />
+                                        <TableColumn fx:id="emailColumn" prefWidth="130.0" text="Email" />
+                                        <TableColumn fx:id="paymentColumn" minWidth="6.0" prefWidth="34.0" text="Payment" />
+                                        <TableColumn fx:id="discountColumn" minWidth="0.0" prefWidth="39.0" text="Discount" />
+                                        <TableColumn fx:id="priceColumn" prefWidth="34.0" text="Price" />
+                                    </columns>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                </TableView>
+                                <Button layoutX="276.0" layoutY="69.0" mnemonicParsing="false" onAction="#searchMemberActionEvent" prefHeight="32.0" prefWidth="56.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;" text="Search">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="337.0" layoutY="69.0" mnemonicParsing="false" onAction="#searchClearCHEMSIDActionEvent" prefHeight="32.0" prefWidth="87.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;" text="Clear Search">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                            <padding>
+                                <Insets left="100.0" />
+                            </padding>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Pane>
+                        <Pane focusTraversable="true" layoutX="17.0" layoutY="374.0" prefHeight="265.0" prefWidth="380.0" style="-fx-background-color: white; -fx-background-radius: 13; -fx-padding: 30px; -fx-border-color: #cd0c0c; -fx-border-radius: 10; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 5), 20, 0, 0, 0);">
+                            <children>
+                                <Label layoutX="111.0" layoutY="9.0" text="QR Generator" textFill="#cd0c0c">
+                                    <font>
+                                        <Font name="System Bold" size="25.0" />
+                                    </font>
+                                </Label>
+                                <Group layoutX="342.0" layoutY="78.0" />
+                                <Group layoutX="62.0" layoutY="72.0" />
+                                <Button fx:id="generatorQrCodeButton" layoutX="224.0" layoutY="156.0" mnemonicParsing="false" onAction="#generatorQrCodeActionEvent" prefHeight="29.0" prefWidth="139.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Generator QR  Code">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Pane layoutX="12.0" layoutY="53.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gray;">
+                                    <children>
+                                        <Label fx:id="qrGenerator_ImageLabel" alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children></Pane>
+                                <Label layoutX="226.0" layoutY="89.0" prefHeight="30.0" text="CHEMS ID">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="qrGenerator_chemsIdTextField" layoutX="224.0" layoutY="119.0" prefHeight="32.0" prefWidth="139.0" promptText="CHEMS ID" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10; -fx-padding: 5;" />
+                                <Button fx:id="sendEmailButton" layoutX="224.0" layoutY="190.0" mnemonicParsing="false" onAction="#sendEmailActionEvent" prefHeight="29.0" prefWidth="139.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Send Email">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="225.0" layoutY="224.0" mnemonicParsing="false" onAction="#qr_clearCHEMSIDActionEvent" prefHeight="29.0" prefWidth="139.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Clear CHEMS ID">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                        <ComboBox fx:id="selectedComboBoxSendingEmail" layoutX="224.0" layoutY="53.0" onAction="#selectedComboBoxSendingEmailActionEvent" prefHeight="32.0" prefWidth="139.0" style="-fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10; -fx-text-fill: #0c8620;" />
+                        <Button fx:id="countSentEmailButton" layoutX="329.0" layoutY="36.0" minHeight="12.0" mnemonicParsing="false" onAction="#countSentEmailActionEvent" prefHeight="12.0" prefWidth="34.0" style="-fx-background-color: gray;">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="resetCountSentEmailButton" layoutX="289.0" layoutY="36.0" minHeight="12.0" mnemonicParsing="false" onAction="#resetCountSentEmailActionEvent" prefHeight="12.0" prefWidth="34.0" style="-fx-background-color: a85454;" textFill="#a85454">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                            </children>
+                            <padding>
+                                <Insets left="100.0" />
+                            </padding>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Pane>
+                        <Pane fx:id="adminPanelPane" focusTraversable="true" layoutX="416.0" layoutY="374.0" prefHeight="265.0" prefWidth="207.0" style="-fx-background-color: white; -fx-background-radius: 13; -fx-padding: 30px; -fx-border-color: #cd0c0c; -fx-border-radius: 10; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 5), 20, 0, 0, 0);">
+                            <children>
+                                <Label layoutX="29.0" layoutY="3.0" text="Admin Panel" textFill="#cd0c0c">
+                                    <font>
+                                        <Font name="System Bold" size="25.0" />
+                                    </font>
+                                </Label>
+                                <Group layoutX="342.0" layoutY="78.0" />
+                                <Group layoutX="62.0" layoutY="72.0" />
+                                <Button layoutX="17.0" layoutY="40.0" mnemonicParsing="false" onAction="#deleteMemberActionEvent" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="DELETE M">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="17.0" layoutY="73.0" mnemonicParsing="false" onAction="#freePaymentActionEvent" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="FREE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="offeredDiscountButton" layoutX="107.0" layoutY="73.0" mnemonicParsing="false" onAction="#availableDiscountActionEvent" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Discount" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="107.0" layoutY="227.0" mnemonicParsing="false" onAction="#viewChartActionEvent" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="View Chart" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="17.0" layoutY="227.0" mnemonicParsing="false" onAction="#logOutAdminActionEvent" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="LogOut" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button layoutX="107.0" layoutY="197.0" mnemonicParsing="false" onAction="#setPriceActionEvent" prefHeight="18.0" prefWidth="83.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Set Price" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <TextField fx:id="adminPanel_ticketPriceTextField" layoutX="17.0" layoutY="197.0" prefHeight="18.0" prefWidth="83.0" promptText="Set Price" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #666464; -fx-border-radius: 10;" />
+                        <Button layoutX="17.0" layoutY="169.0" maxHeight="21.0" maxWidth="83.0" minHeight="21.0" minWidth="83.0" mnemonicParsing="false" onAction="#sendingSEmailActionEvent" prefHeight="21.0" prefWidth="83.0" style="-fx-background-color: gray; -fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10;" text="Set SEmail" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="adminPanel_SendingEmailTextField" layoutX="17.0" layoutY="110.0" prefHeight="27.0" prefWidth="173.0" promptText="Set Sending Email" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10;" />
+                        <Button layoutX="107.0" layoutY="169.0" maxHeight="21.0" maxWidth="83.0" minHeight="21.0" minWidth="83.0" mnemonicParsing="false" onAction="#sendingSEmailDeletActionEvent" prefHeight="21.0" prefWidth="83.0" style="-fx-background-color: gray; -fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10;" text="SEmail Delet" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="adminPanel_SendingEmailAppPasswordTextField" layoutX="17.0" layoutY="140.0" prefHeight="27.0" prefWidth="173.0" promptText="Set SEmail App Password" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10;" />
+                        <TextField fx:id="adminPanel_SetCHEMSIdTextField" layoutX="107.0" layoutY="38.0" maxHeight="20.0" minHeight="10.0" prefHeight="20.0" prefWidth="80.0" promptText="Set CHEMS ID" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10;">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="108.0" layoutY="61.0" minHeight="6.0" mnemonicParsing="false" onAction="#setCHEMSIdActionEvent" prefHeight="6.0" prefWidth="79.0" style="-fx-background-color: gray;">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                            </children>
+                            <padding>
+                                <Insets left="100.0" />
+                            </padding>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

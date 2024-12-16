@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.event.chems.LoginForm">
+    <ImageView fx:id="loginFormImage" fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" />
+    <VBox alignment="CENTER" layoutX="362.0" layoutY="169.0" prefHeight="415.0" prefWidth="300.0" style="-fx-background-color: #595959; -fx-background-radius: 10px; -fx-padding: 30px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);">
+        <AnchorPane>
+            <ImageView fx:id="loginFormLogo" fitHeight="157.0" fitWidth="159.0" layoutX="42.0" layoutY="-32.0" nodeOrientation="INHERIT" opacity="0.8" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane layoutY="130.0">
+                <VBox layoutY="-1.0" maxWidth="240" spacing="20">
+                    <StackPane prefWidth="240.0">
+                        <TextField fx:id="errorFieldWelcome" alignment="CENTER" editable="false" layoutX="10.0" layoutY="10.0" prefWidth="240.0" style="-fx-background-color: #c1ffc1; -fx-text-box-border: transparent; -fx-border-width: 2; -fx-alignment: center; -fx-border-style: solid; -fx-border-color: #00b300; -fx-fill: #2d3748; -fx-border-radius: 4; -fx-background-radius: 50; -fx-border-radius: 50;" text="Welcome CHEMS ❤ ">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="errorFieldRequired" alignment="CENTER" editable="false" layoutX="10.0" layoutY="10.0" prefWidth="240.0" style="-fx-text-box-border: transparent; -fx-background-color: #ffc1bd; -fx-border-width: 2; -fx-border-style: solid; -fx-border-color: #e60000; -fx-border-radius: 4; -fx-alignment: center; -fx-fill: #2d3748;" visible="false">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="errorFieldSuccessful" alignment="CENTER" prefWidth="240.0" style="-fx-background-color: #ffc1bd; -fx-border-width: 2; -fx-border-style: solid; -fx-border-color: #e60000; -fx-border-radius: 4; -fx-alignment: center;" text="Login Successful!" visible="false">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="errorFieldInvalid" alignment="CENTER" prefWidth="240.0" style="-fx-background-color: #ffc1bd; -fx-border-width: 2; -fx-border-style: solid; -fx-border-color: #e60000; -fx-border-radius: 4; -fx-alignment: center;" text="Invalid Username or Password!" visible="false">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                    </StackPane>
+                    <TextField fx:id="usernameTextField" promptText="username" style="-fx-border-color: #e2e8f0; -fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-padding: 5; -fx-font-size: 14px; -fx-background-radius: 10; -fx-border-radius: 10;" />
+                    <StackPane prefHeight="0.0" prefWidth="240.0">
+                        <TextField fx:id="passwordTextField" promptText="password" style="-fx-border-color: #e2e8f0; -fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-padding: 5; -fx-font-size: 14px; -fx-background-radius: 10; -fx-border-radius: 10;" visible="false" />
+                        <PasswordField fx:id="hiddenPasswordTextField" promptText="password" style="-fx-border-color: #e2e8f0; -fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-padding: 5; -fx-font-size: 14px; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                        <CheckBox fx:id="showPassword" blendMode="DARKEN" cache="true" mnemonicParsing="false" onAction="#changeVisibility" StackPane.alignment="CENTER_RIGHT">
+                            <StackPane.margin>
+                                <Insets right="10.0" />
+                            </StackPane.margin>
+                        </CheckBox>
+                    </StackPane>
+                    <AnchorPane>
+                        <children>
+                            <Button fx:id="loginButton" layoutX="10.0" layoutY="-2.0" onAction="#loginHandler" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20 10 20; -fx-background-radius: 50; -fx-font-size: 14px;" text="Login" textAlignment="CENTER">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Button>
+                            <Button layoutX="126.0" layoutY="-2.0" onAction="#exitApplication" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: #4299e1; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20 10 20; -fx-background-radius: 50; -fx-font-size: 14px;" text="Exit" textAlignment="CENTER">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Button>
+                        </children>
+                    </AnchorPane>
+                </VBox>
+            </AnchorPane>
+        </AnchorPane>
+    </VBox>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="549.0" opacity="0.42" prefHeight="20.0" prefWidth="300.0" text="Powered by MADSE24.1F Batch" textAlignment="CENTER" textFill="#e9ff00">
+        <font>
+            <Font name="System Bold" size="11.0" />
+        </font>
+    </Label>
+</AnchorPane>
