@@ -1,0 +1,35 @@
+LICENSE AGREEMENT
+
+Product Name: Christmas Event Management System (CHEMS)
+Version: 1.1.1.1
+Copyright © 2024 Sudil Lakindu M. Arachchi
+
+LICENSE AGREEMENT
+By installing, copying, or using this software, you agree to the terms of this license agreement. Please read these terms carefully.
+
+GRANT OF LICENSE
+Sudil Lakindu ("Licensor") hereby grants you a limited, non-exclusive, and non-transferable license to use the CHEMS software ("Software") subject to the terms of this agreement.
+
+PERMITTED USES
+You may install and use one copy of this software on a single device for personal or commercial purposes.
+
+RESTRICTIONS
+You may not modify, adapt, reverse-engineer, decompile, or disassemble the software. You may not distribute, lease, rent, or sublicense the software to any third party.
+
+COPYRIGHT
+This software is protected by copyright laws and international treaties. All title, ownership rights, and intellectual property rights in and to the software remain with the licensor.
+
+LIMITATION OF LIABILITY
+To the fullest extent permitted by law, the licensor is not liable for any damages, including but not limited to, loss of data, loss of profits, or any other damages arising from the use or inability to use the software.
+
+TERMINATION
+This license is effective until terminated. You may terminate it at any time by deleting the software. The licensor may terminate this license if you fail to comply with any of the terms and conditions. Upon termination, you must destroy all copies of the software.
+
+GOVERNING LAW
+This agreement shall be governed by and construed in accordance with the laws of Sri Lanka.
+
+CONTACT
+For questions regarding this license, please contact:
+
+Sudil Lakindu M. Arachchi
+Email: masudillakindu@gmail.com

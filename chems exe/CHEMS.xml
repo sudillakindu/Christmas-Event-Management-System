@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Sudil Lakindu\Desktop\chems exe\CHEMS.jar</jar>
+  <outfile>C:\Users\Sudil Lakindu\Desktop\chems exe\CHEMS.exe</outfile>
+  <errTitle>Java Runtime Not Found</errTitle>
+  <cmdLine>java -jar CHEMS.exe</cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>https://www.oracle.com/java/technologies/javase-downloads.html</downloadUrl>
+  <supportUrl>https://facebook/sudilmallikaarachchi</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Sudil Lakindu\Desktop\chems exe\image_title.ico</icon>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>true</requiresJdk>
+    <requires64Bit>true</requires64Bit>
+    <minVersion>1.0.4</minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.1.1.1</fileVersion>
+    <txtFileVersion>1.1.1.1</txtFileVersion>
+    <fileDescription>Christmas Event Management System</fileDescription>
+    <copyright>© 2024 Sudil Lakindu M. Arachchi</copyright>
+    <productVersion>1.1.1.1</productVersion>
+    <txtProductVersion>1.1.1.1</txtProductVersion>
+    <productName>Christmas Event Management System</productName>
+    <companyName>MADSE241F-NIBM</companyName>
+    <internalName>Christmas Event Management System</internalName>
+    <originalFilename>CHEMS.exe</originalFilename>
+    <trademarks>Sudil Lakindu M. Arachchi</trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>

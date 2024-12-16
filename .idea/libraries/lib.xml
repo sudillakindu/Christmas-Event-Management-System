@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/activation-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/core-3.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/fxgraphics2d-1.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javase-3.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jfreechart-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mail-1.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.jfree.chart.fx-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-swing-23-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-base-23-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-graphics-23-linux.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
